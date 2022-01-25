@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           scaffoldBackgroundColor: dBackgroundColor,
-          fontFamily: "Poppins",
+          fontFamily: "Quickand",
           textTheme: TextTheme(
             bodyText1: TextStyle(color: dBodyTextColor),
           )),
@@ -75,11 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return SingleChildScrollView(
+              physics: BouncingScrollPhysics(
+                parent: AlwaysScrollableScrollPhysics(),
+              ),
               controller: controller,
               child: Column(
                 children: <Widget>[
                   MyHeader(
-                    image: "assets/icons/stayHome.svg",
+                    image: "assets/icons/stayhome2.svg",
                     iconleft: false,
                     textTop: "Stay\nHome.",
                     textBottom: "Stay\nSafe.",
@@ -121,6 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ],
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Row(
                                 mainAxisAlignment:

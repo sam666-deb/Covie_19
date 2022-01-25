@@ -77,12 +77,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Poppins
+    - family: Quicsand
       fonts:
-        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/Quicksand/QuickSand-Regular.ttf
+        - asset: assets/fonts/QuickSand/QuickSand-Medium.ttf
           weight: 600
-        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        - asset: assets/fonts/Quicksand/QuickSand-Bold.ttf
           weight: 700
   #   - family: Trajan Pro
   #     fonts:

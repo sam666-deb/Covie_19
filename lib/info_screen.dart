@@ -33,6 +33,7 @@ class _InfoScreenState extends State<InfoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
         controller: controller,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,7 +191,7 @@ class PreventCard extends StatelessWidget {
                         maxLines: 4,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                         ),
                       ),
                     ),

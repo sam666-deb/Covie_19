@@ -3,7 +3,6 @@ import 'package:covid_19/info_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-
 class MyHeader extends StatefulWidget {
   final String image;
   final String textTop;
@@ -115,9 +114,10 @@ class _MyHeaderState extends State<MyHeader> {
                       children: <Widget>[
                         Positioned(
                           top: (widget.offset < 0) ? 0 : widget.offset,
+                          left: 20,
                           child: SvgPicture.asset(
                             widget.image,
-                            width: 230,
+                            width: 200,
                             fit: BoxFit.fitWidth,
                             alignment: Alignment.topCenter,
                           ),
@@ -125,7 +125,7 @@ class _MyHeaderState extends State<MyHeader> {
                         SizedBox(width: 20),
                         Positioned(
                           top: 15 - widget.offset / 2,
-                          left: 240,
+                          left: 230,
                           child: Padding(
                             padding: const EdgeInsets.only(top: 20.0),
                             child: Text(

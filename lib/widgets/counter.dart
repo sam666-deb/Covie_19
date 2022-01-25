@@ -18,11 +18,13 @@ class Counter extends StatelessWidget {
     NumberFormat numberFormat = NumberFormat.compact();
     String display = numberFormat.format(number);
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(6),
-          height: 25,
-          width: 20,
+          height: 30,
+          width: 25,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: color.withOpacity(.26),
@@ -42,7 +44,7 @@ class Counter extends StatelessWidget {
         Text(
           display,
           style: TextStyle(
-            fontSize: 10,
+            fontSize: 15,
             color: color,
           ),
         ),
